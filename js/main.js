@@ -41,5 +41,12 @@ slide();
  * calculator
  *
  *
+ *
  */
-
+var input = document.getElementById('screen');
+var buttons = document.querySelectorAll('#calculator table button');
+/**
+ * function calculate
+ * @return calcul
+ *
+ * */
