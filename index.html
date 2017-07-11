@@ -5,23 +5,60 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <link rel="icon" href="favicon.ico" />
+        <!-- Place favicon.ico in tde root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <header>
+        <h1>Javascript Utility</h1>
+    </header>
+    <main class="container">
+        <h2>Slideshow</h2>
+        <div class="slide">
+            <img src="img/slide1.png" class="img-fluid slider" alt="nature">
+            <img src="img/slide2.jpg" class="img-fluid slider" alt="nature">
+            <img src="img/slide3.jpg" class="img-fluid slider" alt="nature">
+            <img src="img/slide5.jpg" class="img-fluid slider" alt="nature">
+            <img src="img/slide6.jpg" class="img-fluid slider" alt="nature">
+            <button id="prev">précédent</button>
+            <button id="next">suivant</button>
+        </div>
+        <!-- /.slide -->
+        <div class="calculator">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="result">
+                        <!-- /#result -->
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button>CE</button></td>
+                    <td></td>
+                    <td></td>
+                    <td><button>ON/Off</button></td>
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>÷</button></td>
+                </tr>
+            </table>
+        </div>
+        <!-- /.calculator -->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-
+    </main>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
