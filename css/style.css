@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -77,17 +77,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: none;
 }
 
-/* line 14, ../sass/style.scss */
-table, td, th {
+/*table, td, th
+{
   border: 1px solid black;
   border-collapse: collapse;
+
   padding-left: 3px;
   padding-right: 3px;
-}
-
+}*/
 /* line 23, ../sass/style.scss */
 th {
-  font-weight: 700;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -102,67 +102,92 @@ input:invalid {
 }
 
 /* line 42, ../sass/style.scss */
-.center {
-  text-align: center;
+#calculator {
+  width: 400px;
+  border-radius: 4px;
+  background-color: FireBrick;
 }
 
-/* line 47, ../sass/style.scss */
-.float-left, .float-right {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* line 55, ../sass/style.scss */
-.float-left {
-  float: left;
-  margin-left: 0;
-  margin-right: 4px;
-}
-
-/* line 63, ../sass/style.scss */
-.float-right {
-  float: right;
-  margin-left: 4px;
-  margin-right: 0;
-}
-
-/* line 72, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 #calculator, #calculator table {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 #calculator #screen {
   font-size: 160%;
   vertical-align: center;
   text-align: right;
-  margin: 8px;
-  padding: 5px;
+  width: 100%;
   min-height: 45px;
   border: 1px solid grey;
   border-radius: 10px;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 #calculator table, #calculator tr, #calculator td {
   border: none;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 #calculator td {
   padding: 8px;
 }
 
-/* line 103, ../sass/style.scss */
-#calculator button {
+/* line 80, ../sass/style.scss */
+#calculator input {
   font-size: 200%;
   color: black;
   text-align: center;
   vertical-align: center;
-  height: 90px;
-  width: 102px;
+  height: 50px;
+  width: 72px;
   border: 2px solid grey;
   border-radius: 17px;
+}
+
+/* line 94, ../sass/style.scss */
+#dog {
+  position: relative;
+  perspective: 800px;
+}
+
+/* line 98, ../sass/style.scss */
+.card-effect {
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+  position: relative;
+}
+
+/* line 103, ../sass/style.scss */
+.card-effect div {
+  backface-visibility: hidden;
+}
+
+/* line 107, ../sass/style.scss */
+.card-effect .card-back {
+  height: 200px;
+  width: 120px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  right: 0;
+  border-radius: 3px;
+  background: blue;
+  transform: rotateY(180deg);
+}
+
+/* line 118, ../sass/style.scss */
+.card-effect.flip {
+  transform: rotateY(180deg);
+}
+
+/* line 123, ../sass/style.scss */
+.dog {
+  content: url("../img/dog.jpg");
+  width: 120px;
+  height: 200px;
+  border-radius: 3px;
+  transform: rotateY(360deg);
 }

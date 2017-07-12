@@ -17,7 +17,7 @@
     </head>
     <body>
     <header>
-        <h1>Javascript Utility</h1>
+        <h1 class="text-center">Javascript Utility</h1>
     </header>
     <main class="container">
         <h2 class="text-center">Slideshow</h2>
@@ -31,47 +31,239 @@
             <button id="next">suivant</button>
         </div>
         <!-- /.slide -->
-        <div id="calculator">
+        <div id="calculator" class="mt-5">
             <h2>Calculatrice</h2>
-            <div id="screen"></div>
+            <input type="text" id="screen">
+            <!-- /#screen -->
 
             <table>
                 <tr>
-                    <td><button type="button">CE</button></td>
-                    <td><button type="button">←</button></td>
-                    <td><button type="button" title="modulo">%</button></td>
-                    <td><button type="button">+</button></td>
+                    <td><input type="button" value="CE"/></td>
+                    <td><input type="button" value="←"/></td>
+                    <td><input type="button" title="modulo" value="%"/></td>
+                    <td><input type="button" value="+"/></td>
                 </tr>
 
                 <tr>
-                    <td><button type="button">7</button></td>
-                    <td><button type="button">8</button></td>
-                    <td><button type="button">9</button></td>
-                    <td><button type="button">-</button></td>
+                    <td><input type="button" value="7"/></td>
+                    <td><input type="button" value="8"/></td>
+                    <td><input type="button" value="9"/></td>
+                    <td><input type="button" value="-"/></td>
                 </tr>
 
                 <tr>
-                    <td><button type="button">4</button></td>
-                    <td><button type="button">5</button></td>
-                    <td><button type="button">6</button></td>
-                    <td><button type="button">×</button></td>
+                    <td><input type="button" value="4"/></td>
+                    <td><input type="button" value="5"/></td>
+                    <td><input type="button" value="6"/></td>
+                    <td><input type="button" value="×"/></td>
                 </tr>
 
                 <tr>
-                    <td><button type="button">1</button></td>
-                    <td><button type="button">2</button></td>
-                    <td><button type="button">3</button></td>
-                    <td><button type="button">÷</button></td>
+                    <td><input type="button" value="1"/></td>
+                    <td><input type="button" value="2"/></td>
+                    <td><input type="button" value="3"/></td>
+                    <td><input type="button" value="÷"/></td>
                 </tr>
 
                 <tr>
-                    <td><button type="button">0</button></td>
-                    <td><button type="button">±</button></td>
-                    <td><button type="button">,</button></td>
-                    <td><button type="button">=</button></td>
+                    <td><input type="button" value="0"/></td>
+                    <td><input type="button" value="±"/></td>
+                    <td><input type="button" value=","/></td>
+                    <td><input type="button" value="="/></td>
                 </tr>
             </table>
         </div>
+        <h2 class="text-center mt-3">Jeux des paires</h2>
+        <div id="dog">
+            <div class="row mt-5 flip">
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+            </div>
+            <!-- /.row -->
+            <div class="row mt-5">
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+                <div class="col card-effect">
+                    <div class="card-front">
+                        <div class="dog"></div>
+                        <!-- /.dog -->
+                    </div>
+                    <!-- /.card-front -->
+                    <div class="card-back">
+                        <div class="color"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.card-back -->
+                </div>
+                <!-- /.col card-effect.card-effect -->
+            </div>
+            <!-- /.row --></div>
+        <!-- /#dog -->
 
     </main>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

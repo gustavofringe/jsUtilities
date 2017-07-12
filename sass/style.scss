@@ -11,18 +11,18 @@
     display: none;
   }
 }
-table, td, th
+/*table, td, th
 {
   border: 1px solid black;
   border-collapse: collapse;
 
   padding-left: 3px;
   padding-right: 3px;
-}
+}*/
 
 th
 {
-  font-weight: 700;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -39,35 +39,11 @@ input:invalid
 }
 
 
-.center
-{
-  text-align: center;
+#calculator{
+  width: 400px;
+  border-radius: 4px;
+  background-color: FireBrick ;
 }
-
-.float-left, .float-right
-{
-  padding: 0;
-
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.float-left
-{
-  float: left;
-
-  margin-left: 0;
-  margin-right: 4px;
-}
-
-.float-right
-{
-  float: right;
-
-  margin-left: 4px;
-  margin-right: 0;
-}
-
 
 #calculator, #calculator table
 {
@@ -80,9 +56,10 @@ input:invalid
   font-size: 160%;
   vertical-align: center;
   text-align: right;
+  width: 100%;
 
-  margin: 8px;
-  padding: 5px;
+  //margin: 8px;
+  //padding: 5px;
 
   min-height: 45px;
 
@@ -100,16 +77,53 @@ input:invalid
   padding: 8px;
 }
 
-#calculator button
+#calculator input
 {
   font-size: 200%;
   color: black;
   text-align: center;
   vertical-align: center;
 
-  height: 90px;
-  width: 102px;
+  height: 50px;
+  width: 72px;
 
   border: 2px solid grey;
   border-radius: 17px;
+}
+
+#dog{
+  position: relative;
+  perspective: 800px;
+}
+.card-effect{
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+  position: relative;
+}
+.card-effect div{
+
+  backface-visibility: hidden;
+}
+.card-effect .card-back{
+  height: 200px;
+  width: 120px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  right: 0;
+  border-radius: 3px;
+  background: blue;
+  transform: rotateY( 180deg );
+}
+.card-effect.flip{
+
+  transform: rotateY( 180deg );
+}
+
+.dog{
+  content: url('../img/dog.jpg');
+  width: 120px;
+  height: 200px;
+  border-radius:3px;
+  transform: rotateY(360deg);
 }
