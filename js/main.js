@@ -91,22 +91,24 @@ for (var j = 0; j < buttons.length; j++) {
  *
  *
  * */
-var image = document.querySelectorAll('#dog .dog');
+var image = document.querySelectorAll('#dog .card-front');
 var flip = document.querySelectorAll('#dog .card-effect');
 var back = document.querySelectorAll('#dog .card-back');
 var color = ['red', 'FireBrick', 'DodgerBlue', 'DimGrey', 'DeepSkyBlue', 'Green', 'HotPink'];
+
 var choice = [];
 var classes = [];
 var cardComputer;
 
 for (let i = 0; i < image.length; i++) {
+    var changeColor = color[Math.floor(Math.random() * color.length)];
+    back[i].style.backgroundColor = changeColor;
     image[i].addEventListener('click', function () {
-        var changeColor = color[Math.floor(Math.random() * color.length)];
         flip[i].classList.add('flip');
         classes.push(flip[i]);
-        back[i].style.backgroundColor = changeColor;
-        choice.push(changeColor);
+        choice.push(back[i].style.backgroundColor)
         console.log(choice)
+        //choice.push(changeColor);
         //computer();
         if(classes.length === 3){
             classes.splice(0,2);
