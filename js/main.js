@@ -93,21 +93,42 @@ for (var j = 0; j < buttons.length; j++) {
  * */
 var image = document.querySelectorAll('#dog .dog');
 var flip = document.querySelectorAll('#dog .card-effect');
-
-console.log(flip)
 var back = document.querySelectorAll('#dog .card-back');
 var color = ['red', 'FireBrick', 'DodgerBlue', 'DimGrey', 'DeepSkyBlue', 'Green', 'HotPink'];
 var choice = [];
+var classes = [];
 var cardComputer;
 
 for (let i = 0; i < image.length; i++) {
     image[i].addEventListener('click', function () {
         var changeColor = color[Math.floor(Math.random() * color.length)];
         flip[i].classList.add('flip');
+        classes.push(flip[i]);
         back[i].style.backgroundColor = changeColor;
         choice.push(changeColor);
-        computer();
-        compare();
+        console.log(choice)
+        //computer();
+        if(classes.length === 3){
+            classes.splice(0,2);
+        }
+        if(choice.length === 2){
+            for (let j=0;j<choice.length;j++){
+                if(choice[j] !== choice[1]){
+                    setTimeout(function(){
+                        console.log(classes)
+                        classes[0].classList.remove('flip');
+                        classes[1].classList.remove('flip');
+
+                    },1500)
+                    console.log(choice)
+                }
+
+            }
+            choice.splice(0,2);
+        }
+
+
+
     });
 }
 /**
@@ -123,11 +144,4 @@ var computer = function () {
         cardComputer.classList.add('flip');
         choice.push(changeColorC);
         backC.style.backgroundColor = changeColorC;
-}
-var compare = function(){
-    for( let j=0;j<choice.length;j++){
-        if(choice[j] !== choice[1]){
-            cardComputer.classList.remove('flip');
-        }
-    }
 }
