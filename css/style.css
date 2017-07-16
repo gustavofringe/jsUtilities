@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 7, ../sass/style.scss */
 .slide {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
 }
 /* line 10, ../sass/style.scss */
@@ -77,14 +77,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: none;
 }
 
-/*table, td, th
-{
+/* line 14, ../sass/style.scss */
+table, td, th {
   border: 1px solid black;
   border-collapse: collapse;
-
   padding-left: 3px;
   padding-right: 3px;
-}*/
+}
+
 /* line 23, ../sass/style.scss */
 th {
   font-weight: 300;
@@ -103,7 +103,7 @@ input:invalid {
 
 /* line 42, ../sass/style.scss */
 #calculator {
-  width: 400px;
+  width: 310px;
   border-radius: 4px;
   background-color: FireBrick;
 }
@@ -115,7 +115,7 @@ input:invalid {
 }
 
 /* line 54, ../sass/style.scss */
-#calculator #screen {
+#calculator #display {
   font-size: 160%;
   vertical-align: center;
   text-align: right;
@@ -125,17 +125,17 @@ input:invalid {
   border-radius: 10px;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 #calculator table, #calculator tr, #calculator td {
   border: none;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 #calculator td {
-  padding: 8px;
+  padding: 2px;
 }
 
-/* line 80, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 #calculator input {
   font-size: 200%;
   color: black;
@@ -147,47 +147,53 @@ input:invalid {
   border-radius: 17px;
 }
 
-/* line 94, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 #dog {
   position: relative;
   perspective: 800px;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .card-effect {
   transform-style: preserve-3d;
   transition: transform 0.2s;
   position: relative;
 }
 
-/* line 103, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .card-effect div {
   backface-visibility: hidden;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .card-effect .card-back {
   height: 200px;
   width: 120px;
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 20px;
   right: 0;
   border-radius: 3px;
-  background: blue;
   transform: rotateY(180deg);
 }
 
-/* line 118, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .card-effect.flip {
   transform: rotateY(180deg);
 }
 
-/* line 123, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .dog {
   content: url("../img/dog.jpg");
   width: 120px;
   height: 200px;
   border-radius: 3px;
   transform: rotateY(360deg);
+  position: relative;
+  left: 5px;
+}
+
+/* line 129, ../sass/style.scss */
+.unclickable {
+  pointer-events: none;
 }

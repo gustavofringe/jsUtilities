@@ -32,48 +32,52 @@
         </div>
         <!-- /.slide -->
         <div id="calculator" class="mt-5">
-            <h2>Calculatrice</h2>
-            <input type="text" id="screen">
-            <!-- /#screen -->
+            <h2>Casio</h2>
+            <form action="#" name="calculator">
+            <input type="text" name="display" id="display" readonly>
 
-            <table>
+            <table id="key">
                 <tr>
-                    <td><input type="button" value="CE"/></td>
-                    <td><input type="button" value="←"/></td>
-                    <td><input type="button" title="modulo" value="%"/></td>
-                    <td><input type="button" value="+"/></td>
+                    <td><input type="button" value="CE" onclick="calculator.display.value -= ''"/></td>
+                    <td><input type="button" value="x&#178;" onclick="calculator.display.value *= calculator.display.value"/></td>
+                    <td><input type="button" value="&larr;" onclick="calculator.display.value = calculator.display.value.slice(0,-1)"/></td>
+                    <td><input type="button" value="&radic;" onclick="calculator.display.value = Math.sqrt(calculator.display.value)" /></td>
                 </tr>
 
                 <tr>
-                    <td><input type="button" value="7"/></td>
-                    <td><input type="button" value="8"/></td>
-                    <td><input type="button" value="9"/></td>
-                    <td><input type="button" value="-"/></td>
+                    <td><input type="button" value="7" onclick="calculator.display.value += '7'"/></td>
+                    <td><input type="button" value="8" onclick="calculator.display.value += '8'"/></td>
+                    <td><input type="button" value="9" onclick="calculator.display.value += '9'"/></td>
+                    <td><input type="button" value="+" onclick="calculator.display.value += '+'"/></td>
                 </tr>
 
                 <tr>
-                    <td><input type="button" value="4"/></td>
-                    <td><input type="button" value="5"/></td>
-                    <td><input type="button" value="6"/></td>
-                    <td><input type="button" value="×"/></td>
+                    <td><input type="button" value="4" onclick="calculator.display.value += '4'"/></td>
+                    <td><input type="button" value="5" onclick="calculator.display.value += '5'"/></td>
+                    <td><input type="button" value="6" onclick="calculator.display.value += '6'"/></td>
+                    <td><input type="button" value="-" onclick="calculator.display.value += '-'"/></td>
                 </tr>
 
                 <tr>
-                    <td><input type="button" value="1"/></td>
-                    <td><input type="button" value="2"/></td>
-                    <td><input type="button" value="3"/></td>
-                    <td><input type="button" value="÷"/></td>
+                    <td><input type="button" value="1" onclick="calculator.display.value += '1'"/></td>
+                    <td><input type="button" value="2" onclick="calculator.display.value += '2'"/></td>
+                    <td><input type="button" value="3" onclick="calculator.display.value += '3'"/></td>
+                    <td><input type="button" value="*" onclick="calculator.display.value += '*'"/></td>
                 </tr>
 
                 <tr>
-                    <td><input type="button" value="0"/></td>
-                    <td><input type="button" value="±"/></td>
-                    <td><input type="button" value=","/></td>
-                    <td><input type="button" value="="/></td>
+                    <td><input type="button" value="0" onclick="calculator.display.value += '0'"/></td>
+                    <td><input type="button" value="." onclick="calculator.display.value += '.'"/></td>
+                    <td><input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)" /></td>
+                    <td><input type="button" value="/" onclick="calculator.display.value += '/'"/></td>
                 </tr>
             </table>
+            </form>
         </div>
         <h2 class="text-center mt-3">Jeux des paires</h2>
+        <div id="end">
+
+        </div>
         <div id="dog">
             <div class="row mt-5 flip">
                 <div class="col card-effect">

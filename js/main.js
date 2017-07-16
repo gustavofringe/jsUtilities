@@ -34,59 +34,6 @@ function slide() {
 }
 slide();
 /**
- *
- * calculator
- *
- *
- *
- */
-var screen = document.querySelector('#screen');
-var numbers = screen.innerHTML;
-var operations = [];
-var buttons = document.querySelectorAll('#calculator table input');
-/*var calculate = function (button) {
-    if (button == '±') {
-        for (let l = 0; l < numbers.length; l++)
-            numbers[l] = -numbers[l];
-    } else if (button == 'CE') {
-        numbers = [];
-        operations = [];
-    } else if (button == '←') {
-        if (numbers.length >= operations.length) {
-            numbers.pop();
-        }
-    } else if (button == '=') {
-        for (let i = 0; i < operations.length; i++) {
-            if (operations[i] == '+') {
-                numbers[0] += numbers[i + 1].pop();
-            }
-            else if (operations[i] == '-') {
-                numbers[0] -= numbers[i + 1].pop();
-            }
-            else if (operations[i] == '×') {
-                numbers[0] *= numbers[i + 1].pop();
-            }
-            else if (operations[i] == '÷'){
-                numbers[0] /= numbers[i + 1].pop();
-            }
-            else if (operations[i] == '%') {
-                numbers[0] %= numbers[i + 1].pop();
-            }
-        }
-        for (let k = 0; k < numbers.length; k++) {
-            screen.innerHTML += numbers[k] + operations[k];
-        }
-    }
-}*/
-for (var j = 0; j < buttons.length; j++) {
-    /*console.log(buttons[j].value)*/
-    buttons[j].addEventListener('click', function () {
-        console.log(this.value)
-        /*console.log(calculate(this.value))*/
-    });
-
-}
-/**
  * pair game
  *
  *
@@ -94,56 +41,71 @@ for (var j = 0; j < buttons.length; j++) {
 var image = document.querySelectorAll('#dog .card-front');
 var flip = document.querySelectorAll('#dog .card-effect');
 var back = document.querySelectorAll('#dog .card-back');
-var color = ['red', 'FireBrick', 'DodgerBlue', 'DimGrey', 'DeepSkyBlue', 'Green', 'HotPink'];
-
+var color = ['Red', 'Blue', 'Green', 'Bisque', 'HotPink', 'MediumPurple', 'IndianRed'];
+var end = document.getElementById('end');
 var choice = [];
 var classes = [];
-var cardComputer;
+var win = [];
 
 for (let i = 0; i < image.length; i++) {
     var changeColor = color[Math.floor(Math.random() * color.length)];
     back[i].style.backgroundColor = changeColor;
+
+
+
+
     image[i].addEventListener('click', function () {
+        win.push(back[i].style.backgroundColor)
         flip[i].classList.add('flip');
         classes.push(flip[i]);
-        choice.push(back[i].style.backgroundColor)
-        console.log(choice)
-        //choice.push(changeColor);
-        //computer();
-        if(classes.length === 3){
-            classes.splice(0,2);
+        choice.push(back[i].style.backgroundColor);
+        console.log(win)
+        if (classes.length === 3) {
+            classes.splice(0, 2);
         }
-        if(choice.length === 2){
-            for (let j=0;j<choice.length;j++){
-                if(choice[j] !== choice[1]){
-                    setTimeout(function(){
-                        console.log(classes)
+        if (choice.length === 2) {
+            for (let k=0;k<image.length;k++){
+                if(!flip[k].classList.contains('flip')){
+                    flip[k].classList.add('unclickable')
+                }
+            }
+            for (let j = 0; j < choice.length; j++) {
+                if (choice[j] !== choice[1]) {
+                    setTimeout(function () {
                         classes[0].classList.remove('flip');
                         classes[1].classList.remove('flip');
 
-                    },1500)
-                    console.log(choice)
+                    }, 1000)
                 }
 
             }
-            choice.splice(0,2);
+            choice.splice(0, 2);
+        }
+        for (let h=0;h<image.length;h++){
+            if(!flip[h].classList.contains('flip')){
+                setTimeout(function(){flip[h].classList.remove('unclickable')},1500)
+            }
         }
 
-
-
+        if(win[0].length !== win[1].length){
+            win.splice(0,2);
+        }else if (win[2].length !== win[3].length){
+            win.splice(2,4);
+        }else if (win[4].length !== win[5].length){
+            win.splice(4,6);
+        }else if (win[6].length !== win[7].length){
+            win.splice(6,8);
+        }else if (win[8].length !== win[9].length){
+            win.splice(8,10);
+        }else if (win[10].length !== win[11].length){
+            win.splice(10,12);
+        }else if (win[12].length !== win[13].length){
+            win.splice(12,14);
+        }
+        console.log(win.length)
+        if(win.length === 14){
+            end.insertAdjacentHTML('afterbegin', '<div id="replay" onClick="window.location.reload()">Rejouer</div>')
+        }
     });
 }
-/**
- *
- * function computer
- * @return computer choice
- *
- */
-var computer = function () {
-        cardComputer = flip[Math.floor(Math.random() * flip.length)];
-        var changeColorC = color[Math.floor(Math.random() * color.length)];
-        var backC = back[Math.floor(Math.random() * back.length)];
-        cardComputer.classList.add('flip');
-        choice.push(changeColorC);
-        backC.style.backgroundColor = changeColorC;
-}
+
