@@ -43,7 +43,7 @@
 
             <table id="key">
                 <tr>
-                    <td><input type="button" value="CE" onclick="calculator.display.value -= ''"/></td>
+                    <td><input type="button" value="CE" onclick="calculator.display.value = ''"/></td>
                     <td><input type="button" value="x&#178;" onclick="calculator.display.value *= calculator.display.value"/></td>
                     <td><input type="button" value="&larr;" onclick="calculator.display.value = calculator.display.value.slice(0,-1)"/></td>
                     <td><input type="button" value="&radic;" onclick="calculator.display.value = Math.sqrt(calculator.display.value)" /></td>
@@ -275,6 +275,13 @@
         <!-- /#dog -->
 
     </main>
+    <footer class="mt-3">
+        <div class="container">
+            <p class="text-center">Production Guisoft</p>
+            <!-- /.text-center -->
+        </div>
+        <!-- /.container -->
+    </footer>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>

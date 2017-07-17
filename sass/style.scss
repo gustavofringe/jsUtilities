@@ -4,6 +4,9 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+/*=============================================================
+slide
+=============================================================== */
 .slide{
   width: 100%;
   margin: 0 auto;
@@ -75,6 +78,9 @@
     }
   }
 }
+/*=========================================================
+calculator
+=========================================================== */
 table, td, th
 {
   border: 1px solid black;
@@ -106,7 +112,7 @@ input:invalid
 #calculator{
   width: 310px;
   border-radius: 4px;
-  background-color: FireBrick ;
+  background-color: #2E7D32 ;
 }
 
 #calculator, #calculator table
@@ -134,24 +140,28 @@ input:invalid
   border: none;
 }
 
-#calculator td
-{
-  padding: 2px;
+#calculator{
+  td{padding: 2px;}
 }
 
-#calculator input
-{
-  font-size: 200%;
-  color: black;
-  text-align: center;
-  vertical-align: center;
+#calculator{
+  input{
+    font-size: 200%;
+    color: black;
+    text-align: center;
+    vertical-align: center;
 
-  height: 50px;
-  width: 72px;
+    height: 50px;
+    width: 72px;
 
-  border: 2px solid grey;
-  border-radius: 17px;
+    border: 2px solid grey;
+    border-radius: 17px;
+  }
 }
+
+/*========================================================================
+pair game
+=========================================================================== */
 
 #dog{
   position: relative;
@@ -162,22 +172,24 @@ input:invalid
   transition: transform 0.2s;
   position: relative;
 }
-.card-effect div{
-
-  backface-visibility: hidden;
+.card-effect{
+  div{
+    backface-visibility: hidden;
+  }
 }
-.card-effect .card-back{
-  height: 200px;
-  width: 120px;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  right: 0;
-  border-radius: 3px;
-  transform: rotateY( 180deg );
+.card-effect{
+  .card-back{
+    height: 200px;
+    width: 120px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 0;
+    border-radius: 3px;
+    transform: rotateY( 180deg );
+  }
 }
 .card-effect.flip{
-
   transform: rotateY( 180deg );
 }
 
@@ -196,4 +208,15 @@ input:invalid
 #replay{
   position: absolute;
   bottom:470px;
+}
+/*========================================================================
+footer
+========================================================================== */
+footer{
+  border: 2px solid black;
+  border-radius: 2px;
+  height: 66px;
+  p{
+    line-height: 40px;
+  }
 }
