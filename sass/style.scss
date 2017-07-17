@@ -194,7 +194,9 @@ pair game
 }
 
 .dog{
-  content: url('../img/dog.jpg');
+  background: url('../img/dog.jpg');
+  background-size: cover;
+  background-position: right;
   width: 120px;
   height: 200px;
   border-radius:3px;

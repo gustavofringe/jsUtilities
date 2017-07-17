@@ -256,7 +256,9 @@ pair game
 
 /* line 196, ../sass/style.scss */
 .dog {
-  content: url("../img/dog.jpg");
+  background: url("../img/dog.jpg");
+  background-size: cover;
+  background-position: right;
   width: 120px;
   height: 200px;
   border-radius: 3px;
@@ -265,12 +267,12 @@ pair game
   left: 5px;
 }
 
-/* line 205, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 .unclickable {
   pointer-events: none;
 }
 
-/* line 208, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 #replay {
   position: absolute;
   bottom: 470px;
@@ -279,13 +281,13 @@ pair game
 /*========================================================================
 footer
 ========================================================================== */
-/* line 215, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 footer {
   border: 2px solid black;
   border-radius: 2px;
   height: 66px;
 }
-/* line 219, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 footer p {
   line-height: 40px;
 }

@@ -72,6 +72,9 @@ var changeColor = color.sort(function(){return .5 - Math.random()})
  */
 for (let i = 0; i < image.length; i++) {
     back[i].style.backgroundColor = changeColor[i];
+    /**
+     * function listen click foreach image
+     */
     image[i].addEventListener('click', function () {
         win.push(back[i].style.backgroundColor)
         flip[i].classList.add('flip');
