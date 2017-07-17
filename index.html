@@ -43,38 +43,38 @@
 
             <table id="key">
                 <tr>
-                    <td><input type="button" value="CE" onclick="calculator.display.value = ''"/></td>
-                    <td><input type="button" value="x&#178;" onclick="calculator.display.value *= calculator.display.value"/></td>
-                    <td><input type="button" value="&larr;" onclick="calculator.display.value = calculator.display.value.slice(0,-1)"/></td>
-                    <td><input type="button" value="&radic;" onclick="calculator.display.value = Math.sqrt(calculator.display.value)" /></td>
+                    <td><input type="button" value="CE" onclick="c('')"/></td>
+                    <td><input type="button" value="x&#178;" onclick="square()"/></td>
+                    <td><input type="button" value="&larr;" onclick="slice()"/></td>
+                    <td><input type="button" value="&radic;" onclick="squareRoot()" /></td>
                 </tr>
 
                 <tr>
-                    <td><input type="button" value="7" onclick="calculator.display.value += '7'"/></td>
-                    <td><input type="button" value="8" onclick="calculator.display.value += '8'"/></td>
-                    <td><input type="button" value="9" onclick="calculator.display.value += '9'"/></td>
-                    <td><input type="button" value="+" onclick="calculator.display.value += '+'"/></td>
+                    <td><input type="button" value="7" onclick="math('7')"/></td>
+                    <td><input type="button" value="8" onclick="math('8')"/></td>
+                    <td><input type="button" value="9" onclick="math('9')"/></td>
+                    <td><input type="button" value="+" onclick="math('+')"/></td>
                 </tr>
 
                 <tr>
-                    <td><input type="button" value="4" onclick="calculator.display.value += '4'"/></td>
-                    <td><input type="button" value="5" onclick="calculator.display.value += '5'"/></td>
-                    <td><input type="button" value="6" onclick="calculator.display.value += '6'"/></td>
-                    <td><input type="button" value="-" onclick="calculator.display.value += '-'"/></td>
+                    <td><input type="button" value="4" onclick="math('4')"/></td>
+                    <td><input type="button" value="5" onclick="math('5')"/></td>
+                    <td><input type="button" value="6" onclick="math('6')"/></td>
+                    <td><input type="button" value="-" onclick="math('-')"/></td>
                 </tr>
 
                 <tr>
-                    <td><input type="button" value="1" onclick="calculator.display.value += '1'"/></td>
-                    <td><input type="button" value="2" onclick="calculator.display.value += '2'"/></td>
-                    <td><input type="button" value="3" onclick="calculator.display.value += '3'"/></td>
-                    <td><input type="button" value="*" onclick="calculator.display.value += '*'"/></td>
+                    <td><input type="button" value="1" onclick="math('1')"/></td>
+                    <td><input type="button" value="2" onclick="math('2')"/></td>
+                    <td><input type="button" value="3" onclick="math('3')"/></td>
+                    <td><input type="button" value="x" onclick="math('*')"/></td>
                 </tr>
 
                 <tr>
-                    <td><input type="button" value="0" onclick="calculator.display.value += '0'"/></td>
-                    <td><input type="button" value="." onclick="calculator.display.value += '.'"/></td>
-                    <td><input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)" /></td>
-                    <td><input type="button" value="/" onclick="calculator.display.value += '/'"/></td>
+                    <td><input type="button" value="0" onclick="math('0')"/></td>
+                    <td><input type="button" value="," onclick="math('.')"/></td>
+                    <td><input type="button" value="=" onclick="egal()" /></td>
+                    <td><input type="button" value="÷" onclick="math('/')"/></td>
                 </tr>
             </table>
             </form>

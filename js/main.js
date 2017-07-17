@@ -42,6 +42,30 @@ function slide() {
 }
 slide();
 /**
+ *
+ * calculator
+ *
+ * */
+var display = document.getElementById('display');
+var c = function(value){
+    display.value = value;
+}
+var math = function(value){
+    display.value += value;
+}
+var egal = function(){
+    c(eval(display.value))
+}
+var square = function(){
+    display.value *= display.value
+}
+var squareRoot = function(){
+    display.value = Math.sqrt(display.value)
+}
+var slice = function(){
+    display.value = display.value.slice(0,-1)
+}
+/**
  * pair game
  *
  *
