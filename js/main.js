@@ -8,14 +8,21 @@ var previous = document.getElementById('prev');
 var next = document.getElementById('next');
 function slide() {
     var x = document.getElementsByClassName("slider");
+    console.log(x)
+    var y = document.querySelectorAll('.point');
+    console.log(y)
     for (var i = 0; i < x.length; i++) {
         x[i].style.display = "none";
+        y[i].style.opacity = 0.5;
+        console.log(y[i])
+        console.log(x[i])
     }
     index++;
     if (index > x.length) {
         index = 1
     }
     x[index - 1].style.display = "block";
+    y[index - 1].style.opacity = 1;
     setTimeout(slide, 5000);
     next.onclick = function () {
         if (index) {

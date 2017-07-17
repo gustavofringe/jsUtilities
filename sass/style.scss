@@ -8,6 +8,42 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
+  .point{
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: black;
+  }
+  .un{
+
+    position: absolute;
+    bottom: 15%;
+    left:40%;
+  }
+  .deux{
+
+    position: absolute;
+    bottom: 15%;
+    left:45%;
+  }
+  .trois{
+
+    position: absolute;
+    bottom: 15%;
+    left:50%;
+  }
+  .quatre{
+
+    position: absolute;
+    bottom: 15%;
+    left:55%;
+  }
+  .cinq{
+
+    position: absolute;
+    bottom: 15%;
+    left:60%;
+  }
 
   .slider{
     display: none;
@@ -21,10 +57,20 @@
       height: 50px;
     }
   }
+  #next{
+    img{
+      position: absolute;
+      top: 30px;
+      right:24%;
+      transform: rotate(260deg);
+
+    }
+  }
   #prev{
     img{
       position: absolute;
-      top: 0;
+      top: 30px;
+      left:24%;
       transform: rotate(90deg);
     }
   }
