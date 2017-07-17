@@ -260,3 +260,9 @@ input:invalid {
 .unclickable {
   pointer-events: none;
 }
+
+/* line 196, ../sass/style.scss */
+#replay {
+  position: absolute;
+  bottom: 470px;
+}

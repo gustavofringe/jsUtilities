@@ -6,16 +6,17 @@
 var index = 0;
 var previous = document.getElementById('prev');
 var next = document.getElementById('next');
+/**
+ * function slide
+ * @return silde of image automatic and manual
+ *
+ */
 function slide() {
     var x = document.getElementsByClassName("slider");
-    console.log(x)
     var y = document.querySelectorAll('.point');
-    console.log(y)
     for (var i = 0; i < x.length; i++) {
         x[i].style.display = "none";
         y[i].style.opacity = 0.5;
-        console.log(y[i])
-        console.log(x[i])
     }
     index++;
     if (index > x.length) {
@@ -45,28 +46,39 @@ slide();
  *
  *
  * */
+/**
+ * variable
+ * @type {NodeList}
+ */
 var image = document.querySelectorAll('#dog .card-front');
 var flip = document.querySelectorAll('#dog .card-effect');
 var back = document.querySelectorAll('#dog .card-back');
-var color = ['Red', 'Blue', 'Green', 'Bisque', 'HotPink', 'MediumPurple', 'IndianRed'];
+var color = ['Red','Red', 'Blue', 'Blue', 'Green', 'Green', 'Bisque', 'Bisque', 'HotPink', 'HotPink', 'MediumPurple', 'MediumPurple', 'IndianRed', 'IndianRed'];
 var end = document.getElementById('end');
 var choice = [];
 var classes = [];
 var win = [];
 
+
+/**
+ * random of color
+ * @type {Array.<string>}
+ */
+var changeColor = color.sort(function(){return .5 - Math.random()})
+/**
+ *
+ * foreach image change color
+ *
+ */
 for (let i = 0; i < image.length; i++) {
-    var changeColor = color[Math.floor(Math.random() * color.length)];
-    back[i].style.backgroundColor = changeColor;
 
-
-
+    back[i].style.backgroundColor = changeColor[i];
 
     image[i].addEventListener('click', function () {
         win.push(back[i].style.backgroundColor)
         flip[i].classList.add('flip');
         classes.push(flip[i]);
         choice.push(back[i].style.backgroundColor);
-        console.log(win)
         if (classes.length === 3) {
             classes.splice(0, 2);
         }
@@ -93,7 +105,11 @@ for (let i = 0; i < image.length; i++) {
                 setTimeout(function(){flip[h].classList.remove('unclickable')},1500)
             }
         }
-
+        /**
+         *
+         * push array for launch replay button
+         *
+         */
         if(win[0].length !== win[1].length){
             win.splice(0,2);
         }else if (win[2].length !== win[3].length){
@@ -109,9 +125,8 @@ for (let i = 0; i < image.length; i++) {
         }else if (win[12].length !== win[13].length){
             win.splice(12,14);
         }
-        console.log(win.length)
         if(win.length === 14){
-            end.insertAdjacentHTML('afterbegin', '<div id="replay" onClick="window.location.reload()">Rejouer</div>')
+            end.insertAdjacentHTML('afterbegin', '<button id="replay" onClick="window.location.reload()">Rejouer</button>')
         }
     });
 }
