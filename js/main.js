@@ -88,19 +88,19 @@ var win = [];
  * random of color
  * @type {Array.<string>}
  */
-var changeColor = color.sort(function(){return .5 - Math.random()})
+var changeColor = color.sort(function(){return .5 - Math.random()});// random color
 /**
  *
  * foreach image change color
  *
  */
 for (let i = 0; i < image.length; i++) {
-    back[i].style.backgroundColor = changeColor[i];
+    back[i].style.backgroundColor = changeColor[i];// attribute color of card
     /**
      * function listen click foreach image
      */
     image[i].addEventListener('click', function () {
-        win.push(back[i].style.backgroundColor)
+        win.push(back[i].style.backgroundColor);//push in array for the end of game
         flip[i].classList.add('flip');
         classes.push(flip[i]);
         choice.push(back[i].style.backgroundColor);
@@ -110,7 +110,7 @@ for (let i = 0; i < image.length; i++) {
         if (choice.length === 2) {
             for (let k=0;k<image.length;k++){
                 if(!flip[k].classList.contains('flip')){
-                    flip[k].classList.add('unclickable')
+                    flip[k].classList.add('unclickable');
                 }
             }
             for (let j = 0; j < choice.length; j++) {
@@ -119,7 +119,7 @@ for (let i = 0; i < image.length; i++) {
                         classes[0].classList.remove('flip');
                         classes[1].classList.remove('flip');
 
-                    }, 1000)
+                    }, 1000);
                 }
 
             }
@@ -127,7 +127,7 @@ for (let i = 0; i < image.length; i++) {
         }
         for (let h=0;h<image.length;h++){
             if(!flip[h].classList.contains('flip')){
-                setTimeout(function(){flip[h].classList.remove('unclickable')},1500)
+                setTimeout(function(){flip[h].classList.remove('unclickable')},1500);
             }
         }
         /**
@@ -151,7 +151,7 @@ for (let i = 0; i < image.length; i++) {
             win.splice(12,14);
         }
         if(win.length === 14){
-            end.insertAdjacentHTML('afterbegin', '<button id="replay" onClick="window.location.reload()">Rejouer</button>')
+            end.insertAdjacentHTML('afterbegin', '<button id="replay" onClick="window.location.reload()">Rejouer</button>');
         }
     });
 }

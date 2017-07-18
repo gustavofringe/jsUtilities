@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -75,67 +75,68 @@ slide
   width: 100%;
   margin: 0 auto;
   position: relative;
+  transition-duration: 0.5s;
 }
-/* line 14, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 .slide .point {
   width: 10px;
   height: 10px;
   border-radius: 20px;
   background-color: black;
 }
-/* line 20, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 .slide .un {
   position: absolute;
   bottom: 15%;
   left: 40%;
 }
-/* line 26, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 .slide .deux {
   position: absolute;
   bottom: 15%;
   left: 45%;
 }
-/* line 32, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .slide .trois {
   position: absolute;
   bottom: 15%;
   left: 50%;
 }
-/* line 38, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .slide .quatre {
   position: absolute;
   bottom: 15%;
   left: 55%;
 }
-/* line 44, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .slide .cinq {
   position: absolute;
   bottom: 15%;
   left: 60%;
 }
-/* line 51, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 .slide .slider {
   display: none;
   margin: 0 auto;
 }
-/* line 55, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .slide #prev, .slide #next {
   border-style: none;
   background-color: transparent;
 }
-/* line 58, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .slide #prev img, .slide #next img {
   width: 50px;
   height: 50px;
 }
-/* line 64, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 .slide #next img {
   position: absolute;
   top: 30px;
   right: 24%;
   transform: rotate(260deg);
 }
-/* line 73, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .slide #prev img {
   position: absolute;
   top: 30px;
@@ -146,7 +147,7 @@ slide
 /*=========================================================
 calculator
 =========================================================== */
-/* line 84, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 table, td, th {
   border: 1px solid black;
   border-collapse: collapse;
@@ -154,36 +155,36 @@ table, td, th {
   padding-right: 3px;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 th {
   font-weight: 300;
   text-align: center;
 }
 
-/* line 101, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 input {
   border-radius: 3px;
 }
 
-/* line 106, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 input:invalid {
   background-color: red;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 #calculator {
   width: 310px;
   border-radius: 4px;
   background-color: #2E7D32;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 #calculator, #calculator table {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 124, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 #calculator #display {
   font-size: 160%;
   vertical-align: center;
@@ -194,17 +195,17 @@ input:invalid {
   border-radius: 10px;
 }
 
-/* line 138, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 #calculator table, #calculator tr, #calculator td {
   border: none;
 }
 
-/* line 144, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 #calculator td {
   padding: 2px;
 }
 
-/* line 148, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 #calculator input {
   font-size: 200%;
   color: black;
@@ -219,25 +220,25 @@ input:invalid {
 /*========================================================================
 pair game
 =========================================================================== */
-/* line 166, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 #dog {
   position: relative;
   perspective: 800px;
 }
 
-/* line 170, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .card-effect {
   transform-style: preserve-3d;
   transition: transform 0.2s;
   position: relative;
 }
 
-/* line 176, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .card-effect div {
   backface-visibility: hidden;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .card-effect .card-back {
   height: 200px;
   width: 120px;
@@ -249,12 +250,12 @@ pair game
   transform: rotateY(180deg);
 }
 
-/* line 192, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .card-effect.flip {
   transform: rotateY(180deg);
 }
 
-/* line 196, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .dog {
   background: url("../img/dog.jpg");
   background-size: cover;
@@ -267,12 +268,12 @@ pair game
   left: 5px;
 }
 
-/* line 207, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .unclickable {
   pointer-events: none;
 }
 
-/* line 210, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 #replay {
   position: absolute;
   bottom: 470px;
@@ -281,13 +282,13 @@ pair game
 /*========================================================================
 footer
 ========================================================================== */
-/* line 217, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 footer {
   border: 2px solid black;
   border-radius: 2px;
   height: 66px;
 }
-/* line 221, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 footer p {
   line-height: 40px;
 }
